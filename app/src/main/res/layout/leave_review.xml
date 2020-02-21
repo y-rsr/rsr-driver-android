@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent">
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_layout">
+
+
+        <ListView
+            android:id="@+id/leave_review_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <com.ridesharerental.widgets.textviews.Custom_TextView
+        android:id="@+id/Tv_no_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="No Reviews"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

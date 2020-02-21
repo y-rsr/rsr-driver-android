@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp"
+            android:gravity="center"
+            android:background="@drawable/white_bg_pri_border"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txt_message"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Mobile Verification"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="vertical">
+
+
+                <com.ridesharerental.widgets.textviews.Custom_Editext
+                    android:id="@+id/edit_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:background="@drawable/gray_border"
+                    android:hint="Enter OTP"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+                <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+                    android:id="@+id/btn_otp_resend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:text="Resend OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+                    android:id="@+id/btn_otp_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/white_bg_pri_border"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp" />
+
+                <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+                    android:id="@+id/btn_otp_verify"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Verify"
+                    android:textColor="@color/white_color"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/primary_color_shape"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

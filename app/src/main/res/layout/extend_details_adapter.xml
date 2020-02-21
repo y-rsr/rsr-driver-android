@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_dates"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textColor="@color/textview_bold"
+                android:textSize="14dp" />
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Checkin"
+                android:id="@+id/txt_check_In"
+                android:textColor="@color/textview_bold"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:src="@drawable/icn_right_arrow"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textColor="@color/textview_bold"
+                android:textSize="14dp" />
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Checkout"
+                android:id="@+id/txt_check_out"
+                android:textColor="@color/textview_bold"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear_dates"
+        android:id="@+id/reservation_extent_view1"
+        android:layout_width="match_parent"
+        android:background="@color/thin_light"
+        android:layout_height="1dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_total"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/reservation_extent_view1"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_lable"
+            android:id="@+id/reservation_extent_view2"
+            android:layout_width="match_parent"
+            android:background="@color/thin_light"
+            android:layout_height="1dp"/>
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of days :"
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_lable"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textview_bold"
+            android:textSize="16dp" />
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0.0"
+            android:id="@+id/value"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textview_bold"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rel_total"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_tt"
+            android:id="@+id/reservation_tot2"
+            android:layout_width="match_parent"
+            android:background="@color/thin_light"
+            android:layout_height="1dp"/>
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Charges : "
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_tt"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textview_bold"
+            android:textSize="16dp" />
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0.0"
+            android:id="@+id/value_tot"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textview_bold"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

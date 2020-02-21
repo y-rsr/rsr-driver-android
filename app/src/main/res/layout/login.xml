@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:id="@+id/lin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_arrow" />
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/ligth_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#939191" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_action_bar"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_login_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/ride_share_rental"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_login_label"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <com.ridesharerental.widgets.textviews.Custom_Editext
+                    android:id="@+id/edit_user_namess"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border"
+                    android:hint="@string/enter_email_address"
+                    android:inputType="textNoSuggestions"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <com.ridesharerental.widgets.textviews.Custom_Editext
+                    android:id="@+id/edi_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/login_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_all"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+            android:id="@+id/txt_sign_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/main_skip_background"
+            android:gravity="center"
+            android:text="@string/login_1"
+            android:textColor="@color/white_color"
+            android:textSize="18sp" />
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:id="@+id/txt_id_for_got"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_sign_login"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/forgot_pass"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_box"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/thin_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="If you are involved in an accident, Please fill out the claim form below" />
+
+
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:text="If you are a renter fill out the driver claim form"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textview_bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/Rl_driver"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/appcolor_curve_drawable_bc">
+
+
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:text="Driver"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:text="If you are involved in an accident with one of our drivers fill out the claimant form"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textview_bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/Rl_claimant"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/app_color_border_bg">
+
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_color_1"
+                android:textSize="14sp"
+                android:text="Claimant"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+  </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

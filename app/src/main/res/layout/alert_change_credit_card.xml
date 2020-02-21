@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@xml/dialog_curve_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+            android:id="@+id/txt_alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9ffffff"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/access_denied"
+            android:padding="@dimen/_10sdp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/custom_dialog_library_message_textview"
+            android:background="#A6A5A3"/>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Bold
+            android:id="@+id/custom_dialog_library_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp"
+            android:text="Hi User Name"
+            android:textColor="#4e4e4e"
+            android:textSize="17dp"/>
+
+
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:id="@+id/custom_dialog_library_message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_dialog_library_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="15dp"
+            android:text="Kindly contact admin"
+            android:textColor="#8a000000"
+            android:textSize="15dp"/>
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_dialog_library_message_textview"
+                android:orientation="horizontal">
+
+                <com.ridesharerental.widgets.textviews.Custom_TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/custom_dialog_library_title_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email"
+                    android:textColor="#8a000000"
+                    android:textSize="15dp"/>
+
+                <com.ridesharerental.widgets.textviews.Custom_TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/custom_dialog_library_title_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email"
+                    android:textColor="@color/ink"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_info_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_info"
+                android:orientation="horizontal">
+
+                <com.ridesharerental.widgets.textviews.Custom_TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/custom_dialog_library_title_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/tel"
+                    android:textColor="#8a000000"
+                    android:textSize="15dp"/>
+
+                <com.ridesharerental.widgets.textviews.Custom_TextView
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/custom_dialog_library_title_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="@color/ink"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        <View
+            android:id="@+id/custom_dialog_library_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ll_info_1"
+            android:layout_marginTop="20dp"
+            android:background="#A6A5A3"/>
+
+        <RelativeLayout
+            android:id="@+id/custom_dialog_library_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/custom_dialog_library_view"
+            android:background="#cdcdcd">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#cdcdcd"
+                android:orientation="horizontal">
+
+                <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+                    android:id="@+id/custom_dialog_library_ok_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#D9ffffff"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@color/ligth_black"
+                    android:textSize="16sp"/>
+
+                <com.ridesharerental.widgets.textviews.Custom_Buttton_Bold
+                    android:id="@+id/custom_dialog_library_cancel_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1px"
+                    android:layout_weight="1"
+                    android:background="#D9ffffff"
+                    android:text="@string/close"
+                    android:textColor="@color/ligth_black"
+                    android:textSize="16sp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

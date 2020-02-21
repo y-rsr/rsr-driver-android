@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08BAC6</color>
+    <color name="colorPrimaryDark">#0e0e0e</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="app_color">#0f0f0f00</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="colorActionMode">#009362</color>
+    <color name="colorControlActivated">#50FF4081</color>
+    <color name="app_color_1">#08BAC6</color>
+
+    <color name="thin_light">#dcdbdb</color>
+
+
+    <color name="thin_light_another">#edecec</color>
+
+
+    <color name="ligth_gray_border">#bcbbbb</color>
+    <color name="ligth_gray">#939292</color>
+    <color name="ligth_black">#464646</color>
+
+    <color name="ligth_rde">#e73508</color>
+
+    <color name="black">#0e0e0e</color>
+    <color name="facebook_blue_color">#526CA5</color>
+    <color name="pink_color">#f17a9c</color>
+
+    <color name="orange_color">#f88204</color>
+
+    <color name="google_plus">#d34836</color>
+
+
+
+    <color name="yellow">#fdc720 </color>
+
+    <color name="drwable_bg">#daf5f5 </color>
+
+
+
+    <color name="textview_bold">#696b6a </color>
+    <color name="textview_light">#abacab </color>
+
+
+    <color name="red"> #ed0a15 </color>
+    <color name="red_1"> #ef3f48 </color>
+
+    <color name="colorPrimary1">#2bbfc9 </color>
+
+
+    <!--View Pager-->
+    <bool name="default_circle_indicator_centered">true</bool>
+
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+
+    <bool name="default_circle_indicator_snap">false</bool>
+
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="change_green">#FF8BBE1D</color>
+
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+
+    <color name="text_gray">#323232</color>
+    <color name="ink">#5a75e7</color>
+
+</resources>

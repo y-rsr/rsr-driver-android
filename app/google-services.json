@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "636504899953",
+    "firebase_url": "https://ridesharerental-3df60.firebaseio.com",
+    "project_id": "ridesharerental-3df60",
+    "storage_bucket": "ridesharerental-3df60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636504899953:android:4a901b1a9846820a3236d0",
+        "android_client_info": {
+          "package_name": "com.ridesharerental.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636504899953-s0lt5ulmqs9ca1hf16nsbsnknoblfct5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYHpH_y9sfvCGvffqGgB8_bDgF0nENjDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636504899953-s0lt5ulmqs9ca1hf16nsbsnknoblfct5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

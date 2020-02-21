@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/chat_detail_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/chat_detail_backLAY"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back_white_arrow" />
+
+        </RelativeLayout>
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chat_detail_backLAY"
+            android:gravity="center"
+            android:text="Review"
+            android:textColor="@color/white_color"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chat_detail_action_bar"
+        android:layout_centerHorizontal="true">
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/review_title"
+            android:textColor="@color/ligth_gray"
+            android:gravity="center|left"
+            android:text="Write your review's here"
+            android:layout_height="wrap_content" />
+
+        <com.ridesharerental.widgets.textviews.Custom_Editext
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:id="@+id/edit_des"
+            android:gravity="top|left"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/ligth_gray"
+            android:background="@drawable/gray_border"
+            android:layout_below="@+id/review_title"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/review_adapter_ratingBAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:maxHeight="30dp"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:mrb_progressTint="@color/colorPrimary"
+            android:layout_below="@+id/edit_des"
+            app:mrb_secondaryProgressTint="@color/ligth_gray_border"
+            app:mrb_progressBackgroundTint="#ADA8A6"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_gravity="center"/>
+
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/review_adapter_ratingBAR"
+            android:id="@+id/review_star_count"
+            android:textColor="@color/ligth_gray"
+            android:gravity="center|left"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/review_star_count"
+            android:id="@+id/rel_next"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/main_skip_background"
+            android:layout_height="45dp">
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="Submit"
+                android:textColor="@color/white_color"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

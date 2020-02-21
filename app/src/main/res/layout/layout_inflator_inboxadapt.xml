@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:id="@+id/rootView"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rel_allll"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <com.ridesharerental.widgets.CircleImageView
+            android:layout_width="60dp"
+            android:id="@+id/layout_inflate_inboxadapt_userprofile"
+            android:src="@drawable/icn_profile"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_inflate_inboxadapt_lay1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/layout_inflate_inboxadapt_userprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_inflate_inboxadapt_username"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/layout_inflate_inboxadapt_datepast"
+                android:text=""
+                android:textColor="@color/ligth_black"
+                android:textSize="16dp" />
+
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/layout_inflate_inboxadapt_datepast"
+                android:text=""
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icn_star"
+                android:textColor="@color/ligth_gray"
+                android:textSize="15dp" />
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_inflate_inboxadapt_username"
+                android:id="@+id/layout_inflate_inboxadapt_data"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/ligth_gray"
+                android:textSize="16dp" />
+
+
+            <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_inflate_inboxadapt_data"
+                android:id="@+id/layout_inflate_inboxadapt_statusdate"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/ligth_gray"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/rel_allll"
+        android:background="#cdcdcd"
+        />
+
+</RelativeLayout>

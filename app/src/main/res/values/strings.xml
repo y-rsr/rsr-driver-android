@@ -1,0 +1,636 @@
+<resources>
+    <string name="app_name">RideShare Rental</string>
+
+
+    <string name="Are_you_Exit">Are you sure you want to exit?</string>
+    <string name="ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+
+
+    <string name="delete">Delete</string>
+    <string name="no">No</string>
+    <string name="yes">YES</string>
+
+
+    <string name="Are_you_logout">Are you sure you want to logout?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="book_screen">Book tasker by</string>
+    <string name="payment_screen">Multiple payment</string>
+    <string name="alert_screen">Instant Task</string>
+    <string name="track_screen">Tracking towards</string>
+    <string name="chat_screen">Chat with the tasker</string>
+
+    <string name="book_text">Book tasker by</string>
+    <string name="payment_text">Mutiple payment</string>
+    <string name="alert_text">Instant task</string>
+    <string name="track_text">Tracking towards</string>
+    <string name="chat_text">Chat with the tasker</string>
+
+    <string name="book_text1">tapping a button</string>
+    <string name="payment_text1">options</string>
+    <string name="alert_text1">alerts</string>
+    <string name="track_text1">work location</string>
+    <string name="chat_text1">and hire them</string>
+
+
+    <string name="alert_ss">Alert</string>
+    <string name="wish_list_empty">Please add car in WishList.</string>
+
+
+    <string name="action_no_internet_title">No Internet!</string>
+    <string name="action_no_internet_message">You are offline please check your internet connection</string>
+    <string name="action_cancel_small">Cancel</string>
+    <string name="action_retry">Retry</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="login_now_s">Login now</string>
+    <string name="login_with_goole">Login with google</string>
+    <string name="signup_with_google">Signup with google</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_now">Login Now</string>
+
+
+    <!--      signup        -->
+    <string name="your_new_account">Your new account</string>
+    <string name="string_with_html">If you are involved in an accident</string>
+    <string name="string_with_html1">Please fill out the claim form below</string>
+    <string name="driver_claim">Driver Claim</string>
+
+
+    <!--    Login       -->
+    <string name="login">Login to</string>
+    <string name="ride_share_rental">Ride Share Rental</string>
+
+
+    <!--     Forgot password       -->
+
+    <string name="reset_your">Reset Your</string>
+    <string name="password">Password</string>
+    <string name="forgot_1">Enter your email and we will send \n security code via SMS</string>
+    <string name="submit">Submit</string>
+
+
+    <!--  price breakdown page -->
+    <string name="price_breakdown">Price Breakdown</string>
+
+
+    <!-- Reservation -->
+
+    <string name="active"> Active Reservation </string>
+    <string name="past"> Past Reservation </string>
+    <string name="find_car"> Find a Car</string>
+
+    <string name="no_reservation">You have not made a reservation yet.. Find a car to start your journey</string>
+    <string name="renatl_start">Rental Started</string>
+    <string name="price">Price</string>
+    <string name="renatl_end">Rental End</string>
+    <string name="renatl_extent">Extend Rental </string>
+    <string name="renatl_extent_details">Extend Details </string>
+
+
+    <string name="download_document">Download Document</string>
+    <string name="download_reg_cer">Download Registration Certificate</string>
+    <string name="download_insurane">Download Insurance</string>
+
+
+    <!--past reservation -->
+
+    <string name="rental_start"> Rental Started</string>
+    <string name="rental_end">Rental End </string>
+    <string name="show_similar_car">Show Similiar Cars</string>
+
+
+    <!--   reservation extent layout        -->
+
+    <string name="extentbtn">Click here to Extend </string>
+
+    <string name="extentto">Extend to</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="to_1">To</string>
+    <string name="rental_length">Rental Length</string>
+    <string name="rental_price">Rental Price</string>
+    <string name="insurance_fee">Insurance Fees</string>
+    <string name="transaction_fee">Transaction Fee</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="one_time_bg_check">One time \nBackground Check</string>
+    <string name="back">Back</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="referal_cde">referal code(Optional)</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="terms">By signing,you are agree to our terms and \n privacy policy</string>
+
+
+    <!--    Transaction page     -->
+    <string name="details">Details</string>
+
+    <string name="rental_cost">Rental Cost</string>
+    <string name="rental_date">Date</string>
+    <string name="rental_extent_cost">Rental Extend Cost</string>
+
+    <string name="dialog_app_exiting">Are you sure you want to Exit</string>
+    <string name="navigation_drawer_ok">ok</string>
+    <string name="navigation_drawer_cancel">cancel</string>
+    <!-- View profile -->
+
+    <string name="editprofile"> Edit Profile </string>
+
+    <string name="personalinfo">Personal Information</string>
+    <string name="dob">Date of Birth</string>
+    <string name="addr">Address</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="license">License Information</string>
+    <string name="license_no">License Number</string>
+
+    <string name="exp_date">Expiration Date</string>
+
+
+
+    <string name="bg_check">Background check</string>
+    <string name="Driving_License">Driving License</string>
+
+
+    <!-- Edit profile -->
+
+    <string name="chnge_profile"> Change profile picture</string>
+
+    <string name="email">Email</string>
+    <string name="ph_no">Phone Number</string>
+    <string name="apart_no">H/APT No</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="license_state">License State</string>
+    <string name="save">Save</string>
+    <string name="upload_doc">Upload Documents</string>
+
+    <string name="h_aptNo">Enter your house apartment No</string>
+    <string name="don_hint">Enter your DOB</string>
+    <string name="street_hint">Enter your street</string>
+    <string name="address_hint">Enter your address</string>
+    <string name="city_hint">Enter your city</string>
+    <string name="state_hint">Enter your state</string>
+    <string name="zipcode_hint">Enter your zip code</string>
+    <string name="exp_hint">Enter your expiration date</string>
+    <string name="license_hint">Enter your license number</string>
+    <string name="username">Name</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+
+
+    <string name="select_extend_date">Extend to date</string>
+
+    <!-- Change password -->
+
+    <string name="chng_pswd"> Change Password</string>
+
+    <string name="current_pswd"> Your current password</string>
+    <string name="new_pswd"> Your new password</string>
+
+    <string name="re_pswd"> Re-type new password</string>
+    <string name="set_pswd">Set new password</string>
+
+
+    <!-- Contact us -->
+
+    <string name="Contact"> Contact Support</string>
+    <string name="call"> Call Us</string>
+    <string name="email_us"> E-mail Us</string>
+
+
+    <!--  Car detail  page -->
+
+    <string name="book_car_now">  Book this car now </string>
+    <string name="perday"> Perday</string>
+    <string name="perweek"> Perweek</string>
+    <string name="permonth">  Permonth</string>
+
+    <string name="response_time">  Response Time :</string>
+    <string name="response_rating">  Response rating :</string>
+    <string name="total_cars"> Total cars for rent :</string>
+
+    <string name="see_more_car"> See more car for this owner</string>
+
+    <string name="abt_this_car">About this Car</string>
+
+    <string name="grt_running_car">Great Running Car</string>
+
+    <string name="mileage">Mileage</string>
+
+    <string name="reviews">Reviews</string>
+
+    <string name="owner">Owner</string>
+    <string name="vinnumber">VIN Number : </string>
+    <string name="v_number">Vehicle Number : </string>
+    <string name="notess">Notes : </string>
+
+
+    <string name="verify_Driver_license_hint">We need to verify your driver license is valid to ensure everyones safety, upload the from and back of your drivers license here</string>
+
+
+    <!--     chat detail page     -->
+    <string name="msg_hint">Write a message</string>
+    <string name="send">Send</string>
+
+
+    <!-- Add credit card -->
+    <string name="add_credit_card"> Add credit card</string>
+    <string name="secure"> This is a secure connection. You\'re safe</string>
+
+    <string name="credit_card_hint"> Enter your credit card number</string>
+    <string name="credit_card_cvv"> Enter your CVV2/CVS2</string>
+    <string name="date">Date</string>
+    <string name="security">Security Code</string>
+
+    <string name="I_accpet">I Accpet</string>
+    <string name="payment_terms_service">Payment Terms of Service</string>
+
+    <string name="security_hint">Enter your security code</string>
+    <string name="username_hint">Enter your name</string>
+    <string name="cc_holder_hint">Enter card holder name</string>
+
+
+    <string name="credit_card_no"> Credit card number</string>
+    <string name="credit_cvv"> CVV2/CVS2</string>
+    <string name="secure2"> To start making payment on Rideshare Rental please provide your payment details.</string>
+
+
+    <string name="year">Year</string>
+    <string name="vehical_no">Vehicle#</string>
+    <string name="notes">Notes</string>
+
+    <string name="vin">Vin</string>
+
+
+    <string name="book_car">Book this car now</string>
+
+
+    <!-- Booking step 3 -->
+
+    <string name="step3">Step 1 of 3</string>
+    <string name="step_three">Step 3</string>
+    <string name="booking">Booking</string>
+    <string name="confirm_booking">Do you want to confirm Booking?</string>
+    <string name="book_now">Book Now</string>
+
+
+    <!-- Booking step 1 -->
+
+    <string name="step1">Step 1 of 3</string>
+    <string name="how_long_rent">How long do you want to rent?</string>
+
+    <string name="by_day">By day -</string>
+    <string name="by_week">By week -</string>
+    <string name="by_month">By month -</string>
+
+    <string name="select_rental_period">Select your rental period</string>
+    <string name="stepsleft2">2 Steps left</string>
+
+    <string name="per_day"> /day </string>
+    <string name="per_week">  /week </string>
+    <string name="per_month">  /month </string>
+
+
+    <!-- Booking step 2 -->
+
+    <string name="step2">Step 2 of 3</string>
+    <string name="see_price_breakdown">See price breakdown</string>
+    <string name="please_provide_driver_license">Please provide your driver License info</string>
+
+    <string name="verification_your_acctn">This information is required to verify your account.</string>
+    <string name="verify_Driver_license">Verify your Driver License</string>
+
+    <string name="agree_to_pay">By checking this box you agree to pay </string>
+
+    <string name="terms_condition">and agree to the terms and conditions.</string>
+
+
+    <string name="stepsleft1">1 Steps left</string>
+    <string name="fname_hint">First Name</string>
+    <string name="Lname_hint">Last Name</string>
+    <string name="enter_apartment_number">House and Apartment number</string>
+
+    <string name="house_apt_no">House and Apartment number</string>
+
+    <string name="h_apt_no">H/APT NO</string>
+
+
+    <!--    Advance filter page     -->
+    <string name="done">Done</string>
+
+
+    <string name="adavancefilter">Advance Filter</string>
+    <string name="reset">Reset</string>
+    <string name="distance_include">Distance Included</string>
+    <string name="price_range">Price Range</string>
+    <string name="more_less">More/Less</string>
+    <string name="year_range">Year Range</string>
+    <string name="reservation_period">Reservation Period</string>
+    <string name="car_make">Car Make</string>
+    <string name="car_model">Car Model</string>
+
+
+    <!-- //seackbar -->
+    <string name="demo_min_label"></string>
+    <string name="demo_max_label"></string>
+
+
+    <!--  change password alert -->
+
+    <string name="pasword_wrong">Your new and confirm password is mismatch</string>
+    <string name="current_paswrd">Enter Your current password</string>
+    <string name="new_paswrd">Enter Your new password</string>
+    <string name="confirm_paswrd">Enter Your confirm password</string>
+    <string name="current_paswrd_wrng">Your current password is wrong</string>
+    <string name="validnew_paswrd">Enter Your new password should be minimum 6 characters</string>
+    <string name="current_new_pawrds_equal">You should enter your old password</string>
+
+
+    <!--   alert key values -->
+
+    <string name="action_opps">Oops!!!</string>
+    <string name="action_success">Success!!!</string>
+
+
+    <!--     Forgot password      alert string  -->
+    <string name="enter_email"> Enter your E-mail address</string>
+
+    <string name="notvalid_email">Enter valid E-mail address</string>
+
+
+    <!-- Edit profile  alert -->
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_second_name">Enter last name</string>
+    <string name="enter_phone">Enter phone number</string>
+
+
+    <string name="day_mile">mi/day</string>
+    <string name="week_mile">mi/week</string>
+    <string name="month_mile">mi/month</string>
+
+    <string name="enter_email_hint">Enter email</string>
+    <string name="enter_vali_email">Enter valid email</string>
+    <string name="choose_make">Choose make</string>
+    <string name="choose_model">Choose model</string>
+    <string name="choose_manufacture_year">Choose manufacture year</string>
+    <string name="choose_pickup_date">Choose pickup date</string>
+    <string name="eneter_message">Enter message</string>
+
+    <string name="twitter_share_text">twitter</string>
+
+
+    <!-- booking step 2 alert -->
+    <string name="enter_license_number">Enter license number</string>
+    <string name="enter_dob">Enter date of birth</string>
+    <string name="enter_license_expire">Enter license expire date</string>
+    <string name="checked_agree">Select agree to pay</string>
+    <string name="pickup_time">Select pick up time</string>
+    <string name="zip_code">Enter ZIP code</string>
+
+
+    <string name="enter_first_name_">Enter first name</string>
+    <string name="enter_last_name_">Enter last name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+
+    <string name="ph_hint">Enter phone number</string>
+
+    <string name="entet_address">Enter address</string>
+    <string name="enter_city">Enter city</string>
+
+    <string name="enter_state">Enter state</string>
+
+    <string name="date_hint">dd/mm/yyyy</string>
+
+    <string name="date_change_format">mm/dd/yyyy</string>
+
+    <string name="enter_card_number">Enter card number</string>
+    <string name="select_month">Select month</string>
+    <string name="select_year">Select year</string>
+    <string name="enter_security_code">Enter security code</string>
+    <string name="payment_failed">Payment failed</string>
+
+    <string name="location">LOCATION</string>
+    <string name="from_c">FROM</string>
+    <string name="to_c">TO</string>
+    <string name="advance_filter">Advance filter</string>
+
+    <string name="single_car_found">Car found near by</string>
+    <string name="car_found"> Cars found near by</string>
+    <string name="no_car_found">No Cars found near by</string>
+    <string name="select">Select</string>
+
+
+    <!--  alert used in credit cards -->
+    <string name="check_creditcard">Accept payment terms and condition</string>
+
+    <string name="holder_name">Enter credit card holder name</string>
+    <string name="valid_card_number1">Enter valid credit card number.</string>
+    <string name="credit_card_hint1"> Enter your credit card number CVV2/CVS2</string>
+    <string name="valid_card_number">Enter valid credit card number CVV2/CVS2.</string>
+    <string name="enter_exp_date"> Enter Your credit card expiry date</string>
+    <string name="enter_exp_year"> Enter Your credit card expiry year</string>
+
+    <string name="server_error">Server Error</string>
+
+
+    <!--     signup      -->
+    <string name="enter_your_first_name">Enter your First Name</string>
+    <string name="enter_your_last_name">Enter your Last Name</string>
+    <string name="enter_your_email_address">Enter your E-mail address</string>
+
+    <string name="enter_your_valid_email_address">Enter valid email</string>
+
+    <string name="enter_password">Enter Password</string>
+
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+
+    <string name="enter_maximum_password">Minimum password length is 6</string>
+
+    <string name="same_password">Password and confirm password\n should be same</string>
+
+    <string name="enter_the_email">Enter the email</string>
+
+    <string name="enter_valid_email">Enter a valid email id</string>
+
+    <string name="enter_the_password">Enter the password</string>
+
+    <string name="enter_email_address">Enter E-Mail address</string>
+
+    <string name="login_1">Login</string>
+
+    <string name="forgot_pass">Forgot password</string>
+
+    <string name="vin_number">VIN Number:</string>
+    <string name="vehicle_number">Vehicle Number :</string>
+
+    <string name="select_pickup_date">Select pick up date</string>
+
+    <string name="select_return_date">Select return  date</string>
+
+    <string name="step_2">Steps 2 of 3</string>
+
+    <string name="upload_license_image">Upload a License Images</string>
+
+    <string name="payment">Payment</string>
+
+    <string name="updated_tree">Updated Tree</string>
+
+    <string name="payment_method">Payment Method</string>
+    <string name="paypal">PAYPAL</string>
+    <string name="credit_card">CREDIT CARD</string>
+
+    <string name="credit_card_number">Credit Card Number</string>
+
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYYY</string>
+
+    <string name="security_code">Security Code</string>
+
+    <string name="book_it_using">Book</string>
+    <string name="extend_credit_card">Extend</string>
+    <string name="change_card">Change Card</string>
+    <string name="access_denied">Access Denied!</string>
+    <string name="add_credit_car_details">Add Credit Card details</string>
+
+    <string name="rideshare_rental">RideShare Rental</string>
+    <string name="continuw_with_paypal">Do you want to continue paying with PayPal ?</string>
+
+    <string name="payment_success">Payment Successful</string>
+    <string name="payment_success_content">Thank you. your payment has been successful. A confirmation email has been sent to you email</string>
+
+    <string name="select_car_make">Select car make</string>
+
+    <string name="reservation_empty_data">You have not made a reservation \n yet. Find a car to start the jounery.</string>
+    <string name="find_a_car">Find a car</string>
+
+    <string name="waiting_acceptance">Waiting\nacceptance</string>
+    <string name="insurance_registrton">Insurance/Registration</string>
+    <string name="active_">Active</string>
+
+    <string name="invoice">Invoice</string>
+    <string name="my_transactions">My Transactions</string>
+
+    <string name="plate">Plate</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="documents">Documents</string>
+    <string name="docs">Documents:</string>
+    <string name="download_docs">Download documents</string>
+    <string name="close">Close</string>
+
+    <string name="day_rental">days Rental</string>
+    <string name="extent_rental">Extend Rental</string>
+    <string name="Review">Review</string>
+
+    <string name="you_have_not_booked">You have not booked a car \n yet. Find a car to start the jounery.</string>
+
+    <string name="rented_car_for">Rented car for</string>
+    <string name="days">days</string>
+
+    <string name="no_data">No data</string>
+    <string name="waiting">Waiting</string>
+    <string name="ready">Ready</string>
+
+    <string name="upload_ur_license">Upload your license</string>
+
+    <string name="no_message_available">No Message Available</string>
+
+    <string name="booking_request">BOOKING REQUEST : </string>
+    <string name="invalid_booking">Invalid Booking</string>
+
+    <string name="ambasador_pgm">Referral code:</string>
+    <string name="share_with_friends">Share with friends</string>
+
+
+    <string name="to_login_width">Order cards with your refferral code</string>
+
+    <string name="rank">Rank : </string>
+
+    <string name="color_code">Colorcode : </string>
+
+    <string name="rank_value">Executive ambassador</string>
+
+    <string name="no_rental_contract_found">No rental contracts found</string>
+
+    <string name="owner_info">Ownwer Info</string>
+    <string name="car_info">Car Info</string>
+    <string name="booking_info">Booking Info</string>
+    <string name="spent">Spent</string>
+    <string name="insurance_document">Insurance and Document</string>
+
+
+    <!--     contact us        -->
+
+    <string name="c_first_name">First Name*</string>
+    <string name="c_last_name">Last Name*</string>
+    <string name="c_email">Email*</string>
+    <string name="c_phone">Phone*</string>
+    <string name="c_propsed_pickup_date">Proposed Pick Up Date</string>
+    <string name="c_vehicle_interented_in">Vehicle Interest In*</string>
+    <string name="c_message">Message (if you have any questions about listing a car or listing your fleet send us a message)</string>
+
+
+    <string name="enter_email_addre">Enter email address</string>
+
+
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_email">&#xe087;</string>
+    <string name="ic_add">&#xe006;</string>
+    <string name="ic_close">&#xe048;</string>
+    <string name="ic_folder">&#xe09d;</string>
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="ic_sd_storage">&#xe141;</string>
+
+    <!-- <string name="ic_sd_storage"></string>-->
+
+    <string name="ic_check_circle_blank">&#xe03e;</string>
+    <string name="name">name</string>
+
+    <string name="colorcode">color</string>
+    <string name="childs">childsdata</string>
+    <string name="email_data">email_data</string>
+    <string name="referal_code">referal_code</string>
+    <string name="host_iamge">host_iamge</string>
+    <string name="modified">modified</string>
+    <string name="child_status">child_status</string>
+
+
+    <!-- Alert Dialog -->
+    <string name="alert_label_title">Sorry</string>
+    <string name="alert_nointernet">No Internet Connection</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard_resend_mail"><u>Resend the confirmation mail</u></string>
+    <string name="delete_message">Are you sure, you want to delete selected messages?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="conversation_owner_title">Start Conversation with Owner</string>
+    <string name="conversation_admin_title">Start Conversation with Admin</string>
+    <string name="conversation_owner_subject_hint">Subject</string>
+    <string name="conversation_owner_message_hint">Message</string>
+    <string name="conversation_owner_btn_submit">Submit</string>
+    <string name="conversation_alert_please_select_owner">Please select the Owner.</string>
+    <string name="conversation_alert_enter_subject">Please enter the subject.</string>
+    <string name="conversation_alert_enter_message">Please enter the message.</string>
+    <string name="verify_mobile">Please verify your mobile</string>
+
+
+    <string name="signature_note">*Note:Put signature over the line provided with in the box.</string>
+    <string name="alert_signature">Please put signature before submit.</string>
+    <string name="alert_signature_success">Signature added Successfully.</string>
+    <string name="success_otp_send">OTP has been sent successfully.</string>
+
+    <string name="signature_alert"> Add Signature.</string>
+    <string name="hi">Hi</string>
+    <string name="tel">Tel</string>
+</resources>

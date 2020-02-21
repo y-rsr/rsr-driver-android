@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/rel_text"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/txt_doc_name"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginRight="40dp"
+            android:text="Documents"
+            android:textColor="@color/ligth_black"
+            android:layout_width="0dp"
+            android:layout_weight=".85"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.15">
+            <ImageView
+                android:id="@+id/img_download"
+                android:background="@drawable/download_icon"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rel_text"
+        android:background="#cdcdcd"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/rel_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/searching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:weightSum="2">
+
+            <com.ridesharerental.widgets.Custom_AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edit_search"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:background="@drawable/layout_shape"
+                android:drawableLeft="@drawable/search"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:hint="Enter your location" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white_color"
+        android:layout_below="@+id/rel_action"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@color/white_color"
+            android:scrollbars="vertical"
+            android:id="@+id/list_country_data"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

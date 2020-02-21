@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_tak_photo"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:background="@drawable/gallery_shape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/new_camera"/>
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:id="@+id/dismiss"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Photo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_choose_photo"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/gallery_shape"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/new_gallery"/>
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                android:id="@+id/dg_gallery"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose from gallery"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_cancel"
+            android:background="@drawable/gallery_shape"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/dg_cancel"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:id="@+id/Iv_indicater"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/card_unselect" />
+
+
+        <com.ridesharerental.widgets.textviews.Custom_TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/Iv_indicater"
+            android:text="Standard deductible $2500.00 on any damages or accidents."
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/card_bg"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="3dp"
+    android:id="@+id/container"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pdf_icon"/>
+
+    <com.ridesharerental.widgets.textviews.Custom_TextView
+        android:id="@+id/pdf_name"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

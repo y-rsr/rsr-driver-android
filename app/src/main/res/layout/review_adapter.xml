@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <com.ridesharerental.widgets.CircleImageView
+            android:layout_width="60dp"
+            android:id="@+id/review_adapterprofileIMG"
+            android:src="@drawable/icn_profile"
+            android:layout_height="60dp" />
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/review_adapter_ratingBAR"
+            android:layout_toRightOf="@+id/review_adapterprofileIMG"
+            android:text="Andrew Clare"
+            android:id="@+id/review_adapterusernameTXT"
+            android:textColor="@color/ligth_black"
+            android:textSize="16sp" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/review_adapter_ratingBAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="15dp"
+            android:maxHeight="15dp"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            app:mrb_progressTint="#19a8e1"
+            app:mrb_secondaryProgressTint="@color/ligth_gray_border"
+            app:mrb_progressBackgroundTint="#ADA8A6"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_gravity="center"/>
+
+
+        <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+              android:layout_toRightOf="@+id/review_adapterprofileIMG"
+            android:layout_below="@+id/review_adapterusernameTXT"
+            android:text="@string/verify_Driver_license_hint"
+            android:id="@+id/review_adapteruse_decTXT"
+            android:textColor="@color/textview_light"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toRightOf="@+id/review_adapterprofileIMG"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/review_adapteruse_decTXT"
+            android:background="#e9e9e9"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

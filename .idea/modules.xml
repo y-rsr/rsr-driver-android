@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CountryCodePicker/CountryCodePicker.iml" filepath="$PROJECT_DIR$/CountryCodePicker/CountryCodePicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ridesharerental.iml" filepath="$PROJECT_DIR$/Ridesharerental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alert_animation/alert_animation.iml" filepath="$PROJECT_DIR$/alert_animation/alert_animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryn/libraryn.iml" filepath="$PROJECT_DIR$/libraryn/libraryn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryslider/libraryslider.iml" filepath="$PROJECT_DIR$/libraryslider/libraryslider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silky-signature/silky-signature.iml" filepath="$PROJECT_DIR$/silky-signature/silky-signature.iml" />
+    </modules>
+  </component>
+</project>

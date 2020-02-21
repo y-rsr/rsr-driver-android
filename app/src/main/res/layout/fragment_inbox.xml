@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ridesharerental.app.Inbox">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/action_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@color/white_color"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/white_color"
+                android:id="@+id/activity_main_swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/fragment_inbox_listview"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <com.ridesharerental.widgets.textviews.Custom_TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/txt_no_data"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/no_message_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

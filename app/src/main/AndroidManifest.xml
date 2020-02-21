@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ridesharerental.app">
+
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.renters.app.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.renters.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <permission
+        android:name="com.ridesharerental.app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:protectionLevel="normal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <service
+            android:name="com.ridesharerental.fcm.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ridesharerental.fcm.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Identify Location update Permission -->
+        <receiver android:name="com.ridesharerental.utils.UpdateLocationService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/external_files" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBbMxOIX4Lf0S2S8qur8VWjdoyR7CQWwuE" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCdyOuzibXODSowG4bz9YxzXFXfigdXa5c" />
+
+        <activity
+            android:name=".Splash_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <!--
+            <activity android:name=".Slider_page"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        -->
+        <activity
+            android:name=".Main_homepage"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Slider_page"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Sign_up_page"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Login_page"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Forgot_Password"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Reservation_Extent"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".My_Edit_profile"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Chat_detail"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".CarDetailPage"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Booking_Step1"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Booking_Step2"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Booking_Step3"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdvanceFilter"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Search_Google_Places"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Payment"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Payment_Completed"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PriceBreakdown"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Find_Car_Map_List"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Filter_Item_Layout"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Review_Page"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Extent_Details"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Invoive"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Paypal"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OTP"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ridesharerental.ambasador.Updated_Tree"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DriverClaimActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".DriverClaimentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity
+            android:name=".Dummy"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/No_Need_Actionbar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="90418bfc91e8c7209969d4fa2702a93a18bd26ac" />
+        <activity
+            android:name=".MessageActivity"
+            android:theme="@style/No_Need_Actionbar" />
+        <activity android:name=".ChatImageViewActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/white_color"
+        android:background="@color/white_color"
+        android:backgroundTint="@color/white_color"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_allll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/white_color">
+
+            <com.ridesharerental.widgets.CircleImageView
+                android:id="@+id/layout_inflate_inboxadapt_userprofile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icn_profile" />
+
+            <RelativeLayout
+                android:id="@+id/layout_inflate_inboxadapt_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/layout_inflate_inboxadapt_userprofile">
+
+                <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                    android:id="@+id/layout_inflate_inboxadapt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/layout_inflate_inboxadapt_datepast"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="BMW  GT 2019"
+                    android:textColor="@color/ligth_black"
+                    android:textSize="16dp" />
+
+                <com.ridesharerental.widgets.textviews.Custom_TextView
+                    android:id="@+id/layout_inflate_inboxadapt_datepast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icn_star"
+                    android:text=""
+                    android:textColor="@color/ligth_gray"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                    android:id="@+id/layout_inflate_inboxadapt_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_inflate_inboxadapt_username"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Ranjith Ganesan"
+                    android:textColor="@color/ligth_gray"
+                    android:textSize="16dp" />
+
+
+                <com.ridesharerental.widgets.textviews.Custom_Textview_Medium
+                    android:id="@+id/layout_inflate_inboxadapt_statusdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_inflate_inboxadapt_data"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Jan 15"
+                    android:textColor="@color/ligth_gray"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

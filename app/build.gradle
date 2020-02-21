@@ -1,0 +1,132 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
+    defaultConfig {
+        applicationId "com.ridesharerental.app"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 18
+        versionName "2.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    /* packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        pickFirst 'AndroidManifest.xml'
+    }*/
+
+    /* 4) Enable jumbo mode */
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_7
+//        targetCompatibility JavaVersion.VERSION_1_7
+//    }
+
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.1.3'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    testCompile 'junit:junit:4.12'
+    compile project(':libraryslider')
+    //compile 'cn.pedant.sweetalert:library:1.3'
+    compile project(':CountryCodePicker')
+    /*compile 'com.adobe.creativesdk.foundation:auth:0.9.7'
+        compile 'com.adobe.creativesdk:image:4.6.3'
+
+        compile ('com.google.android:android') {
+            exclude group: 'com.google.android'
+        }*/
+
+    /*compile "com.localytics.android:library:3.8.0"*/
+
+    /* compile 'com.adobe.creativesdk.foundation:auth:0.4.264'
+        compile 'com.adobe.creativesdk:image:4.0.0'*/
+    compile project(':libraryn')
+    compile project(':silky-signature')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.android.support:design:28.0.0'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.android.support:cardview-v7:28.0.0'
+    compile 'com.github.jd-alexander:LikeButton:0.2.3'
+    compile 'me.zhanghai.android.materialratingbar:library:1.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.+'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.roomorama:caldroid:3.0.1'
+    compile 'com.nispok:snackbar:2.11.+'
+    compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.yalantis:ucrop:2.2.0-native'
+    compile 'com.google.android.gms:play-services-analytics:7.3.0'
+    compile 'com.github.johnkil.print:print:1.2.2'
+    compile 'com.alibaba:fastjson:latest.integration'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+    compile 'com.intuit.sdp:sdp-android:1.0.6'
+    //compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.7@aar') {
+        transitive = true;
+    }
+}
